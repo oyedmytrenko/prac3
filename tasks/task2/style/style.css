@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 50%;
+  justify-content: center;
+}
+
+.block-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid red;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-number {
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.block-number svg {
+  width: 50px;
+  height: 50px;
+}
+
+.block-number circle {
+  stroke: red;
+  stroke-width: 2;
+  fill: transparent;
+}
+
+h2, ul {
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "• ";
+}
+
+ul li:nth-child(even) {
+  color: red;
+}
